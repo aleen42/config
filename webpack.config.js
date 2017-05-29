@@ -27,7 +27,7 @@ module.exports = {
         filename: 'index.js'
     },
     resolve: {
-        alias: require('./src/alias.js')
+        alias: require('./alias.config.js')
     },
     resolveLoader: {
         alias: {
