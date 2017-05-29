@@ -13,7 +13,7 @@
  *	- Document: webpack.config.js
  *	- Author: aleen42
  *	- Description: A configuration file for configuring Webpack
- *	- Create Time: May, 30th, 2017s
+ *	- Create Time: May, 30th, 2017
  *	- Update Time: May, 30th, 2017
  *
  *****************************************************************/
