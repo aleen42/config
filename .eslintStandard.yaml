@@ -1,7 +1,6 @@
 
 ---
 root    : true
-extends : "coremail"
 
 # override eslint-config-standard
 parserOptions:
@@ -18,14 +17,6 @@ env:
 
 globals:
     $                               : true
-    jQuery                          : true
-    requirejs                       : true
-    jasmineRequire                  : true
-    ActiveXObject                   : true
-    # Globals from Coremail Webmail
-    CM                              : true
-    CC                              : true
-    KindEditor                      : true
 
 rules:
     eqeqeq                          : warn
