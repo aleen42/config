@@ -24,33 +24,17 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.join(__dirname, 'build'),
-        filename: 'index.js'
+        filename: 'index.js',
     },
     resolve: {
-        alias: require('./alias.config.js')
+        alias: require('./alias.config.js'),
     },
     resolveLoader: {
         alias: {
             text: 'html-loader'
-        }
+        },
     },
     module: {
-        loaders: [
-            /** style */
-            {
-                test: /\.css/,
-                loader: 'style!css?sourceMap',
-            },
-
-            /** babel */
-            {
-                test: /\.jsx?$/,
-                loader: ['babel-loader', 'eslint-loader'],
-                exclude: /node_modules/,
-                query: {
-                    presets: ['es2015', 'react']
-                }
-            }
-        ]
-    }
+        loaders: [],
+    },
 };
