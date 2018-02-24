@@ -13,8 +13,8 @@
  *	- Document: webpack.config.js
  *	- Author: aleen42
  *	- Description: A configuration file for configuring Webpack
- *	- Create Time: May, 30th, 2017
- *	- Update Time: May, 30th, 2017
+ *	- Create Time: __${TIME}__
+ *	- Update Time: __${TIME}__
  *
  *****************************************************************/
 
@@ -24,17 +24,17 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.join(__dirname, 'build'),
-        filename: 'index.js',
+        filename: 'index.js'
     },
     resolve: {
-        alias: require('./alias.config.js'),
+        alias: require('./alias.config.js')
     },
     resolveLoader: {
         alias: {
             text: 'html-loader'
-        },
+        }
     },
     module: {
-        loaders: [],
-    },
+        loaders: []
+    }
 };

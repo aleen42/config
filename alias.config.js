@@ -14,18 +14,13 @@
  *	- Author: aleen42
  *	- Description: A configuration file for rename some keyword
                    for importing
- *	- Create Time: May, 30th, 2017
- *	- Update Time: May, 30th, 2017
+ *	- Create Time: __${TIME}__
+ *	- Update Time: __${TIME}__
  *
  *****************************************************************/
 
-const path = require('path');
-const modulesPath = path.resolve('./src/modules');
-const componentsPath = path.resolve('./src/components');
-
 module.exports = {
-    modules: modulesPath,
-    components: componentsPath,
-
     /** any alias for modules or components, or even anything else */
+    /** modules: path.resolve('./src/modules'), */
+    /** ... */
 };
