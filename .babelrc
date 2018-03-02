@@ -1,5 +1,5 @@
 {
-    "presets": ["react", "es2015"],
+    "presets": ["__${PRESETS}__"],
     "plugins": [
         ["module-alias", [
             /** { "src": "./src/components", "expose": "components" }, */

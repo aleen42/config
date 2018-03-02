@@ -18,6 +18,8 @@
  *
  *****************************************************************/
 
+/* global require, module */
+
 const path = require('path');
 
 module.exports = {
@@ -34,7 +36,5 @@ module.exports = {
             text: 'html-loader'
         }
     },
-    module: {
-        loaders: []
-    }
+    module: '__${MODULE}__'
 };
