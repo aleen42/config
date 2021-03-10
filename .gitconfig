@@ -6,8 +6,12 @@
 [alias]
 	pick = cherry-pick
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ai) %C(bold blue)<%an>%Creset' --abbrev-commit
+        up = pull --rebase
+        co = checkout
 	squash-all = "!f(){ git reset $(git commit-tree HEAD^{tree} -m \"${1:-A new start}\");};f"
 	desc = describe
+        short-diff = diff --shortstat
+        raw-diff = diff --raw
 
 [rebase]
 	autoSquash=true
@@ -16,6 +20,7 @@
 	recentlySeenVersion = 2.20.1.windows.1
 [core]
 	autocrlf = false
+	editor = vim
 [difftool "sourcetree"]
 	cmd = '' \"$LOCAL\" \"$REMOTE\"
 [mergetool "sourcetree"]
