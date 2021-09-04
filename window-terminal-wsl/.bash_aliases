@@ -20,7 +20,7 @@ export TEMP="/temp/karma" # Create a folder under C:/tmp/karma for resolving htt
 # export CHROME_BIN="/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe"
 # export FIREFOX_BIN="/mnt/c/Program Files/Mozilla Firefox/firefox.exe"
 
-export LOCALHOST="192.168.200.192"
+export LOCALHOST="127.0.0.1"
 alias socks="ALL_PROXY=socks5://$LOCALHOST:1080/ \
        http_proxy=http://$LOCALHOST:1080/ \
        https_proxy=http://$LOCALHOST:1080/ \
