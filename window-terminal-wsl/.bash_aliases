@@ -35,7 +35,8 @@ export -f cdw
 
 # alias Windows npm
 function npm() {
-  $(realpath --relative-to="$(pwd)" /mnt/f/Program\ Files/nodejs)/npm $@
+  # https://github.com/microsoft/WSL/issues/2370#issuecomment-440220631
+  cmd.exe /C "npm $* 2>&1 < NUL"
 }
 export -f npm
 
