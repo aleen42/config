@@ -19,8 +19,8 @@
     socks go get -u github.com/justjanne/powerline-go
     ```
 
-    2. Apply [`powerline-go-aleen.json`](./powerline-go-aleen.json) for specifying themes of Power Line.
-    3. Apply [`.bashrc`](./.bashrc) for setting up scripts.
+    2. Download [`powerline-go-aleen.json`](./powerline-go-aleen.json) for applying specifying themes of Power Line.
+    3. Edit your local [`.bashrc`](./.bashrc#L103-L109) for setting up scripts.
 
     *Notice: need [Consolas Nerd Font Complete Mono Windows Compatible.ttf](./consolas_nf.ttf) to show special icons*
 
