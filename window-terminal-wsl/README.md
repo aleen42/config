@@ -3,7 +3,10 @@
 1. Install Windows Terminal via Microsoft Store.
 2. Install Ubuntu WSL via Microsoft Store.
 3. Apply [`settings.json`](./settings.json) for configuring the Window Terminal.
-4. Apply [`.bash_aliases`](./.bash_aliases) for some common used aliases when accessing Windows Command like `idea64.exe`, `explorer.exe`, .etc.
+
+    *Notce: use your local guid*
+
+5. Apply [`.bash_aliases`](./.bash_aliases) for some common used aliases when accessing Windows Command like `idea64.exe`, `explorer.exe`, .etc.
 
     *Notice: WSL 2 cannot connect localhost or 127.0.0.1, and you need to use [the internal IP](https://github.com/microsoft/WSL/issues/5211#issuecomment-706652801) address in your LAN network*
 
@@ -18,6 +21,9 @@
 
     2. Apply [`powerline-go-aleen.json`](./powerline-go-aleen.json) for specifying themes of Power Line.
     3. Apply [`.bashrc`](./.bashrc) for setting up scripts.
+
+    *Notice: need [Consolas Nerd Font Complete Mono Windows Compatible.ttf](./consolas_nf.ttf) to show special icons*
+
 6. Use `WSLENV` to share Windows Environment Variables in the Ubuntu WSL like `PROJECT/p:TERMINAL/p`, where we can echo `$PROJECT` inside the terminal.
 7. Apply [`.vimrc`](./.vimrc) for supporting automatically paste data to clipboard when yanking via Visual mode.
 8. Run [`setup.reg`](./setup.reg) to support opening WSL in the context menu of a specific folder.
