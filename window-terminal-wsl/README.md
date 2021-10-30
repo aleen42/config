@@ -25,8 +25,8 @@
     *Notice: need [Consolas Nerd Font Complete Mono Windows Compatible.ttf](./consolas_nf.ttf) to show special icons*
 
 6. Use `WSLENV` to share Windows Environment Variables in the Ubuntu WSL like `PROJECT/p:TERMINAL/p`, where we can echo `$PROJECT` inside the terminal.
-7. Apply [`.vimrc`](./.vimrc) for supporting automatically paste data to clipboard when yanking via Visual mode.
-8. Run [`setup.reg`](./setup.reg) to support opening WSL in the context menu of a specific folder.
+7. ~~Apply [`.vimrc`](./.vimrc) for supporting automatically paste data to clipboard when yanking via Visual mode.~~ (Fixed under WSL 2)
+8. ~~Run [`setup.reg`](./setup.reg) to support opening WSL in the context menu of a specific folder.~~ (Supported under the newest Windows Terminal)
 
 ### FAQ
 
