@@ -12,9 +12,11 @@
 	desc = describe
         short-diff = diff --shortstat
         raw-diff = diff --raw
-
+        fe = fetch --prune
+        stat-conflicts = !git ls-files --unmerged
+        apply-commit = am --ignore-space-change -3
 [rebase]
-	autoSquash=true
+#	autoSquash=true
 	autoStash=true
 [winUpdater]
 	recentlySeenVersion = 2.20.1.windows.1
@@ -26,3 +28,6 @@
 [mergetool "sourcetree"]
 	cmd = "'' "
 	trustExitCode = true
+[http]
+	proxy = socks5://127.0.0.1:1080
+        
