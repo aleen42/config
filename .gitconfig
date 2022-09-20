@@ -10,13 +10,15 @@
         co = checkout
 	squash-all = "!f(){ git reset $(git commit-tree HEAD^{tree} -m \"${1:-A new start}\");};f"
 	desc = describe
+        stat = "!f() { git log --pretty=tformat: --numstat \"$@\" | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf \"added lines: \\033[32m%s\\033[0m, removed lines: \\033[31m%s\\033[0m, total lines: \\033[34m%s\\033[0m\", add, subs, loc }'; git log --pretty=format:'' \"$@\" | wc -l | awk '{ printf \", \\033[34m%s\\033[0m commits in total\", $1 }'; };f"
+        stats = "!f(){ git log --format='%aN' $@ | sort | uniq -c | sort -k1 -n -r | awk -F' ' '{$1=\"\";sub(/ /,\"\")}1' OFS=' ' | while read name; do git stat --author=\"$name\" $@; echo \" (author: \\033[34m$name\\033[0m)\"; done; };f"
         short-diff = diff --shortstat
         raw-diff = diff --raw
         fe = fetch --prune
         stat-conflicts = !git ls-files --unmerged
         apply-commit = am --ignore-space-change -3
 [rebase]
-#	autoSquash=true
+	autoSquash=true
 	autoStash=true
 [winUpdater]
 	recentlySeenVersion = 2.20.1.windows.1
@@ -29,5 +31,5 @@
 	cmd = "'' "
 	trustExitCode = true
 [http]
-	proxy = socks5://127.0.0.1:1080
+	proxy = socks5://127.0.0.1:7890
         
