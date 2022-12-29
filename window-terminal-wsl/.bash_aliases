@@ -20,12 +20,13 @@ export TEMP="/temp/karma" # Create a folder under C:/tmp/karma for resolving htt
 # export CHROME_BIN="/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe"
 # export FIREFOX_BIN="/mnt/c/Program Files/Mozilla Firefox/firefox.exe"
 
-export LOCALHOST="127.0.0.1"
-alias socks="ALL_PROXY=socks5://$LOCALHOST:1080/ \
-       http_proxy=http://$LOCALHOST:1080/ \
-       https_proxy=http://$LOCALHOST:1080/ \
-       HTTP_PROXY=http://$LOCALHOST:1080/ \
-       HTTPS_PROXY=http://$LOCALHOST:1080/"
+export LOCALHOST="10.0.0.1"
+export SOCKS_PORT="1080"
+alias socks="ALL_PROXY=socks5://$LOCALHOST:$SOCKS_PORT/ \
+       http_proxy=http://$LOCALHOST:$SOCKS_PORT/ \
+       https_proxy=http://$LOCALHOST:$SOCKS_PORT/ \
+       HTTP_PROXY=http://$LOCALHOST:$SOCKS_PORT/ \
+       HTTPS_PROXY=http://$LOCALHOST:$SOCKS_PORT/"
 
 # cdw Windows path
 function cdw() {

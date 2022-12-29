@@ -7,17 +7,16 @@
     *Notce: use your local guid*
 
 5. Apply [`.bash_aliases`](./.bash_aliases) for some common used aliases when accessing Windows Command like `idea64.exe`, `explorer.exe`, .etc.
-
-    *Notice: WSL 2 cannot connect localhost or 127.0.0.1, and you need to use [the internal IP](https://github.com/microsoft/WSL/issues/5211#issuecomment-706652801) address in your LAN network*
-
 6. Install Power Line tutorial:
 
     1. Setup via [justjanne/powerline-go](https://github.com/justjanne/powerline-go)
 
     ```bash
     sudo apt install golang-go
-    socks go get -u github.com/justjanne/powerline-go
+    socks go install github.com/justjanne/powerline-go@latest
     ```
+
+    *Notice: WSL 2 cannot connect localhost or 127.0.0.1, and you need to use [the internal IP](https://github.com/microsoft/WSL/issues/5211#issuecomment-706652801) address in your LAN network*
 
     2. Download [`powerline-go-aleen.json`](./powerline-go-aleen.json) for applying specifying themes of Power Line.
     3. Edit your local [`.bashrc`](./.bashrc#L103-L109) for setting up scripts.
