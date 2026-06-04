@@ -1,8 +1,8 @@
 # This is Git's per-user configuration file.
 [user]
 # Please adapt and uncomment the following lines:
-	name = 徐沛文
-	email = pwxu@coremail.cn
+	name = Aleen
+	email = aleen42@vip.qq.com
 [alias]
 	pick = cherry-pick
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ai) %C(bold blue)<%an>%Creset' --abbrev-commit
@@ -34,5 +34,5 @@
 	cmd = "'' "
 	trustExitCode = true
 [http]
-	proxy = socks5://127.0.0.1:7890
+#	proxy = socks5://127.0.0.1:7890
         
